@@ -13,7 +13,7 @@ module.exports = {
       }
 			throw res.data.cod;
 		}, function(res) {
-			throw (res && ((res.response && res.response.data && (res.response.data.message || res.response.data)) || (res.code))) || res;
+			throw ('Unable to fetch weather for that location');
 		});
 	}
 }
